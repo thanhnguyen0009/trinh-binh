@@ -289,13 +289,13 @@
 }
 
 .box-form{
-  height: 750px;
+  height: 950px;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
-  align-items: flex-start;
+  align-items: center;
   /* padding: 40px; */
-  background-image: url('./anh/back.PNG');
+  background-image: url('./anh/IMG_5276.PNG');
   background-position: bottom center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -501,7 +501,11 @@ background-color: #61673A;
     margin-left: 55px;
   }
   .box-form{
-    margin-top: 100px;
-    margin-left: 30px;
+    height: 900px;
+    margin-top: 50px;
+    /* margin-left: 30px; */
+  }
+  .img-form{
+    padding: 10px;
   }
 }

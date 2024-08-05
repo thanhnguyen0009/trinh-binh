@@ -184,9 +184,9 @@
     margin: 0 auto; 
   }
 .box-container{
-  height: 750px;
+  height: 900px;
   width: 100%;
-  background-image: url('./anh/back.PNG');
+  background-image: url('./anh/IMG_5331.PNG');
   background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -504,7 +504,7 @@
       font-size: 20px;
     }
     .box-container{
-      height: 800px;
+      height: 900px;
     }
     .box-top{
       margin-top: 80px;
