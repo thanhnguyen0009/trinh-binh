@@ -184,7 +184,7 @@
     margin: 0 auto; 
   }
 .box-container{
-  height: 1100px;
+  height: 1200px;
   width: 100%;
   background-image: url('./anh/nen.webp');
   background-position: bottom;
@@ -484,8 +484,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 200px;
-  height: 30px;
+  height: 50px;
   background-color: #61673A;
   border-radius: 20px;
   font-family: 'SVN-Gotham';
@@ -493,9 +494,23 @@
 }
 .adrive{
   color: #fff;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 400;
 }
+
+.box-cap{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.audio{
+  /* display: none; */
+}
+
+
   @media (max-width: 480px){
     .container {
         width: 100%;
@@ -523,13 +538,16 @@
       font-size: 20px;
     }
     .box-container{
-      height: 1100px;
+      height: 1200px;
     }
     .box-top{
       margin-top: 80px;
     }
     .lb-cnt3{
       font-size: 17px;
+    }
+    .drive{
+      height: 50px;
     }
   }
   
