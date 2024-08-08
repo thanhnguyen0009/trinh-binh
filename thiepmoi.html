@@ -50,8 +50,9 @@
     <div class="container">
         <div class="box-container">
             <div class="box-top">
-                <!-- <button id="play-music-btn" class="btn-modal"> -->
-                <img src="./thiep/anh/IMG_5495.PNG" alt="" class="img-top">
+                <button id="play-music-btn" class="btn-modal">
+                <img src="./thiep/anh/IMG_1101.GIF" alt="" class="img-top"></button>
+
                 <img src="./thiep/anh/t-b-07.png" alt="" class="img-top1">
                 <div class="box-btn">
                     <div class="row">
@@ -68,7 +69,7 @@
             </div>
             <div class="box-drive">
                 <div class="drive">
-                <a class="adrive" href="https://drive.google.com/drive/folders/1OqAz3lBmsoh4hGKq_j3VkN8LlZ1PHqNM?usp=sharing" target="_blank">XEM ẢNH CƯỚI TẠI ĐÂY <br> Thời gian: từ 28/9 đến 5/10</a>
+                <a class="adrive" href="https://drive.google.com/drive/folders/1OqAz3lBmsoh4hGKq_j3VkN8LlZ1PHqNM?usp=sharing" target="_blank">XEM ẢNH TIỆC CƯỚI TẠI ĐÂY <br> Thời gian: từ 28/9 đến 5/10</a>
             </div>
             </div>
             <div class="modal" id="modal1">
@@ -88,19 +89,20 @@
         </div>
     </div>
 
-    <!-- <audio controls autoplay class="audio">
-        <source src="thiep/MÌNH YÊU NHAU YÊU NHAU BÌNH YÊN THÔI  Đinh Hương ft Hà Anh Tuấn Official Lyric Video.mp3" type="audio/mpeg">
-        Trình duyệt của bạn không hỗ trợ thẻ audio.
-    </audio> -->
-    <iframe id="myVideo" width="1" height="1" src="https://www.youtube.com/embed/bkQamlyEVLw?autoplay=1&si=YbgJNgIgE-n80JIz" title="YouTube video player" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    <!-- Optional: Load the IFrame Player API code asynchronously (not needed for autoplay) -->
+    <audio id="background-music" autoplay>
+        <source src="./thiep/MÌNH YÊU NHAU YÊU NHAU BÌNH YÊN THÔI  Đinh Hương ft Hà Anh Tuấn Official Lyric Video.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
     <script>
-      var tag = document.createElement('script');
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        document.getElementById("play-music-btn").addEventListener("click", function() {
+            var audio = document.getElementById("background-music");
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
 
         const modalTriggerButtons = document.querySelectorAll("[data-modal-target]");
         const modals = document.querySelectorAll(".modal");
