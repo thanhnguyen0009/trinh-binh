@@ -184,7 +184,7 @@
     margin: 0 auto; 
   }
 .box-container{
-  height: 900px;
+  height: 950px;
   width: 100%;
   background-image: url('./anh/IMG_5331.webp');
   background-position: bottom;
@@ -473,10 +473,29 @@
   cursor: pointer;
 }
 
-
+.box-drive{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
   
+.drive{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 30px;
+  background-color: #61673A;
+  border-radius: 20px;
+  font-family: 'SVN-Gotham';
 
-
+}
+.adrive{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
   @media (max-width: 480px){
     .container {
         width: 100%;
