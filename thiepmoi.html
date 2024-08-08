@@ -88,21 +88,20 @@
         </div>
     </div>
 
-    <audio controls autoplay class="audio">
+    <!-- <audio controls autoplay class="audio">
         <source src="thiep/MÌNH YÊU NHAU YÊU NHAU BÌNH YÊN THÔI  Đinh Hương ft Hà Anh Tuấn Official Lyric Video.mp3" type="audio/mpeg">
         Trình duyệt của bạn không hỗ trợ thẻ audio.
-    </audio>
-    
+    </audio> -->
+    <iframe id="myVideo" width="1" height="1" src="https://www.youtube.com/embed/bkQamlyEVLw?autoplay=1&si=YbgJNgIgE-n80JIz" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- Optional: Load the IFrame Player API code asynchronously (not needed for autoplay) -->
     <script>
-    window.addEventListener('load', function() {
-        const audio = document.getElementById('background-audio');
-        audio.muted = true;
-        audio.play().then(() => {
-            audio.muted = false;
-        }).catch(error => {
-            console.log('Autoplay was prevented:', error);
-        });
-    });
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
         const modalTriggerButtons = document.querySelectorAll("[data-modal-target]");
         const modals = document.querySelectorAll(".modal");
         const modalCloseButtons = document.querySelectorAll(".modal-close");
